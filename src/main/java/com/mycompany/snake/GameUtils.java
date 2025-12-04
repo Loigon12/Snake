@@ -4,13 +4,6 @@
  */
 package com.mycompany.snake;
 
-<<<<<<< HEAD
-=======
-/**
- *
- * @author User
- */
->>>>>>> 5e0250a44272ac154e761f9f126bdba7eb7a411b
 import javax.sound.sampled.*;
 import java.io.*;
 import java.net.URL;
@@ -18,11 +11,7 @@ import java.net.URL;
 /**
  * Clase de utilidad para operaciones comunes del juego:
  * - Gestión de puntuación máxima persistente.
-<<<<<<< HEAD
- * - Reproducción de efectos de sonido. 
-=======
  * - Reproducción de efectos de sonido.
->>>>>>> 5e0250a44272ac154e761f9f126bdba7eb7a411b
  * 
  * @author Sebastian Londoño
  */
@@ -59,23 +48,13 @@ public class GameUtils {
             String line = reader.readLine();
             return line != null ? Integer.parseInt(line.trim()) : 0;
         } catch (IOException | NumberFormatException e) {
-<<<<<<< HEAD
             System.err.println("No se encontró puntuación previa (usando 0). Error: " + e.getMessage());
-=======
-            System.err.println("ℹ️ No se encontró puntuación previa (usando 0). Error: " + e.getMessage());
->>>>>>> 5e0250a44272ac154e761f9f126bdba7eb7a411b
             return 0;
         }
     }
 
     /**
      * Reproduce un sonido breve (efecto de sonido no bloqueante).
-<<<<<<< HEAD
-=======
-     * Soporta archivos WAV en 16-bit PCM (estándar para efectos cortos).
-     * 
-     * @param soundPath Ruta del recurso (relativa a `src/main/resources`)
->>>>>>> 5e0250a44272ac154e761f9f126bdba7eb7a411b
      */
     public static void playSound(String soundPath) {
         try {

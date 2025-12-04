@@ -32,10 +32,10 @@ public class ControlPanel extends JPanel {
     }
 
     /**
-     * Crea un botón de reinicio estilizado con hover y sombra sutil.
+     * Crear un botón de reinicio estilizado con hover y sombra sutil.
      */
     private JButton createRestartButton(Runnable onRestart) {
-        JButton button = new JButton("↻");
+        JButton button = new JButton("Reiniciar");
         button.setFont(new Font("Segoe UI", Font.BOLD, 18));
         button.setFocusable(false);
         button.setBorder(BorderFactory.createEmptyBorder(6, 12, 6, 12));
