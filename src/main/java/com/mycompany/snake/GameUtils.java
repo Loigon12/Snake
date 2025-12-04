@@ -11,7 +11,7 @@ import java.net.URL;
 /**
  * Clase de utilidad para operaciones comunes del juego:
  * - Gestión de puntuación máxima persistente.
- * - Reproducción de efectos de sonido.
+ * - Reproducción de efectos de sonido. 
  * 
  * @author Sebastian Londoño
  */
@@ -55,7 +55,6 @@ public class GameUtils {
 
     /**
      * Reproduce un sonido breve (efecto de sonido no bloqueante).
-     * Soporta archivos WAV en 16-bit PCM (estándar para efectos cortos).
      */
     public static void playSound(String soundPath) {
         try {
