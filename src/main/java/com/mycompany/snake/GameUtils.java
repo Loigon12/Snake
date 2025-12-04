@@ -4,10 +4,6 @@
  */
 package com.mycompany.snake;
 
-/**
- *
- * @author User
- */
 import javax.sound.sampled.*;
 import java.io.*;
 import java.net.URL;
@@ -52,7 +48,7 @@ public class GameUtils {
             String line = reader.readLine();
             return line != null ? Integer.parseInt(line.trim()) : 0;
         } catch (IOException | NumberFormatException e) {
-            System.err.println("ℹ️ No se encontró puntuación previa (usando 0). Error: " + e.getMessage());
+            System.err.println("No se encontró puntuación previa (usando 0). Error: " + e.getMessage());
             return 0;
         }
     }
@@ -60,8 +56,6 @@ public class GameUtils {
     /**
      * Reproduce un sonido breve (efecto de sonido no bloqueante).
      * Soporta archivos WAV en 16-bit PCM (estándar para efectos cortos).
-     * 
-     * @param soundPath Ruta del recurso (relativa a `src/main/resources`)
      */
     public static void playSound(String soundPath) {
         try {

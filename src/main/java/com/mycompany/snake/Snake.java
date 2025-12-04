@@ -376,7 +376,7 @@ public static void main(String[] args) {
 
         JLayeredPane layeredPane = new JLayeredPane();
         layeredPane.setPreferredSize(new Dimension(BOARD_WIDTH, BOARD_HEIGHT));
-        layeredPane.setSize(BOARD_WIDTH, BOARD_HEIGHT); // ← ¡Importante!
+        layeredPane.setSize(BOARD_WIDTH, BOARD_HEIGHT); // Importante
 
         layeredPane.add(game, JLayeredPane.DEFAULT_LAYER);
         layeredPane.add(game.controlPanel, JLayeredPane.PALETTE_LAYER);
